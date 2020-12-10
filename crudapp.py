@@ -15,7 +15,7 @@ def get_data(id=None):
 
 
 def post_data():
-    data = {"name": "Lol", "roll": 105, "city": "Madhapar"}
+    data = {"name": "Bruce", "roll": 108, "city": "Madhapar"}
     json_data = json.dumps(data)
     r = requests.post(url=URL, data=json_data)
     data = r.json()
@@ -23,7 +23,7 @@ def post_data():
 
 
 def update_data():
-    data = {"id": 5, "name": "Bruce", "roll": 105, "city": "Anjar"}
+    data = {"id": 6, "name": "Natasha", "roll": 208, "city": "Madhapar"}
     json_data = json.dumps(data)
     r = requests.put(url=URL, data=json_data)
     data = r.json()
